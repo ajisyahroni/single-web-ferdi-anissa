@@ -1,0 +1,35 @@
+canvas {
+    height: 20vh; 
+    width: 90vw; 
+    display: block;
+}
+#particles-js {
+    background: #242323;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%); 
+    color: #fff;
+    max-width: 90%;
+    padding: 2em 3em;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0px 0px 2px #131415;
+    font-family: 'Open Sans', sans-serif;
+    height: 600px;
+}
+
+.note{
+    color: #73f7e7;
+}
+
+.bg-note{
+    background-color: #73f7e7;
+}
+
+.responsive-image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}

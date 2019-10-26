@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Ferdi Anissa</title>
+  <script src="./assets/js/particles.js"></script>
+  <script src="./assets//js/typed.js"></script>
+  <script src="./assets/js/confetti.js"></script>
+  <meta name="theme-color" content="#242323" />
+  <!-- <script src="/__/firebase/7.2.2/firebase-app.js"></script>
+  <script src="/__/firebase/7.2.2/firebase-analytics.js"></script>
+  <script src="/__/firebase/init.js"></script> -->
+</head>
+
+<body id="particles-js">
+
+  <div class="text">
+    <h1>You did it! Congrats! 🎓</h1>
+    <img height="350" width="350" src="./assets/images/anissa-0.jpg" alt="Ferdi">
+    <p><i>Ferdi Anissariswari, S.Kom.</i></p>
+    <h2 id="message"></h2>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script>
+    var myConfetti = confetti.create(canvas, { resize: true });
+    myConfetti({
+      particleCount: 500,
+      spread: 160
+    });
+    var options = {
+      strings: [
+        "<strong>Selamat Wisuda Nissa 🧕<strong>",
+        "<p><i>Kerja semangat ye </i>😎</p>",
+        "<p>Work <i class='note'>Smart</i></p>",
+        "<p>Play <i class='note'>Smart</i></p>",
+        "<p>Jangan lupa <strong class='note'>Istirahart</strong></p>",
+        "<i>Jan  <strong class='note'>main </strong> terus</i>",
+        "<i>Kalo <strong class='note'>main </strong> terus, kapan serius ?</i>",
+        "<p>Cye serius, canda doang Nis </br>😀</p>",
+        "<p>Owh, ada <i class='bg-note'>quotes</i> neh</p>",
+        "<p><i>Biar kaya orang bener</i></p>",
+        "<p>Eh, gajadi ding</p>",
+        "<p>masi proses jadi orang bener </br> 🙈</p>",
+        "<p><i class='bg-note'>pantun</i> aja deh 😸</p>",
+        "<p>Masak aerr 🙈</p>",
+        "<p><i>biar mateng</i></p>",
+        "<p>Masak aerr 🙈 . . . </p>",
+        "<p><i>bodo amat</i>😀 . .</p>",
+        "<p>Minumlah kopimu selagi <i class='bg-note'>hangat</i></p>",
+        "<p>Tulislah idemu selagi <i class='bg-note'>ingat</i></p>",
+        "<p>Cakep . . . .</p>",
+        "<p>Udah itu doang . . . .</p>",
+        "<p>Sorry gak spesial</p>",
+        "<p>Gabisa buat kepsyen keren</p>",
+        "<p>wkwkkwkw</p>",
+        "<p>by . . .</p>",
+        "<img src='./assets/images/ttd.png' width='50' height='65' alt=''> 😎",
+      ],
+      typeSpeed: 50,
+      smartBackspace: true,
+      cursorChar: '_',
+    };
+
+    var typed = new Typed('#message', options);
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 38,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#00ffe1"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });</script>
+</body>
+
+</html>
